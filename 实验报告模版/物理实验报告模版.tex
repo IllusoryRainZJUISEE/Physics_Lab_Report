@@ -26,7 +26,7 @@
   linkcolor=red,                 % 目录、公式及图表交叉引用的颜色
   filecolor=cyan,                 % 本地文件链接的颜色
   urlcolor=blue,                  % 网址链接的颜色
-  pdftitle={物理实验预习报告模版},     % 写入PDF文档属性的标题
+  pdftitle={物理实验报告模版},     % 写入PDF文档属性的标题
   bookmarksnumbered=true          % PDF书签显示章节编号
 }
 
@@ -53,7 +53,7 @@
     aftername={}                                                   % 取消编号与标题文字之间的空格
   },
   subsection={
-    format={\CJKfontspec[AutoFakeBold=2.5]{KaiTi}\sihao\bfseries}, % 二级标题使用四号加粗楷体
+    format={\CJKfontspec[AutoFakeBold=2.5]{KaiTi}\sihao\bfseries}, % 二级标题使用四号加粗楷体                                               
   },
   subsubsection={
     format={\CJKfontspec[AutoFakeBold=2.5]{KaiTi}\xiaosi\bfseries}, % 三级标题使用小四加粗楷体
@@ -67,35 +67,42 @@
 \fancyfoot[C]{\thepage}
 \begin{center}
   \CJKfontspec[AutoFakeBold=2.5]{KaiTi}\bfseries % 封面中文使用楷体并人工加粗，西文同时加粗
-  \vspace*{2.0cm}
-  \xiaochu\textbf{物理实验预习报告}
+  \vspace{0.8cm}
+  \includegraphics[width=8.2cm]{figures/head.png}
 
-  \vspace{3.8cm}
+  \vspace{0.2cm}
+  \xiaochu 
+    物理实验报告
+
+  \vspace{3.5cm}
   \begin{minipage}{10.0cm}
     \sanhao
-    \makebox[2.6cm][l]{\textbf{实验名称：}}
+    \makebox[2.6cm][l]{实验名称：}
     \underline{\makebox[7.0cm][c]{}}\par\vspace{12pt}
 
-    \makebox[2.6cm][l]{\textbf{指导老师：}}
+    \makebox[2.6cm][l]{实验桌号：}
     \underline{\makebox[7.0cm][c]{}}\par\vspace{12pt}
+
+    \makebox[2.6cm][l]{指导教师：}
+    \underline{\makebox[7.0cm][c]{}}
   \end{minipage}
 
-  \vspace{3.8cm}
+  \vspace{3.5cm}
   \begin{minipage}{10.0cm}
     \sihao
-    \makebox[1.4cm][l]{\textbf{班级：}}
+    \makebox[1.4cm][l]{班级：}
     \underline{\makebox[8.0cm][c]{}}\par\vspace{10pt}
 
-    \makebox[1.4cm][l]{\textbf{姓名：}}
+    \makebox[1.4cm][l]{姓名：}
     \underline{\makebox[8.0cm][c]{IllusoryRain}}\par\vspace{10pt}
 
-    \makebox[1.4cm][l]{\textbf{学号：}}
+    \makebox[1.4cm][l]{学号：}
     \underline{\makebox[8.0cm][c]{}}
   \end{minipage}
 
-  \vspace{1.8cm}
+  \vspace{2.0cm}
   \sihao
-    \textbf{实验日期：}
+    实验日期：
     \underline{\makebox[0.7cm][c]{}}年
     \underline{\makebox[0.7cm][c]{}}月
     \underline{\makebox[0.7cm][c]{}}日
@@ -104,8 +111,6 @@
   \vspace{0.7cm}
   \sihao 
     浙江大学物理实验教学中心
-
-  \vspace{0.2cm}
 \end{center}
 
 \newpage
@@ -113,12 +118,29 @@
 
 \section{预习报告（10分）}
 （注：将已经写好的“物理实验预习报告”内容拷贝过来）
+
   \subsection{实验综述（5分）}
   （自述实验现象、实验原理和实验方法，包括必要的光路图、电路图、公式等。不超过500字。）
+
   \subsection{实验重点（3分）}
   （简述本实验的学习重点，不超过100字。）
+
   \subsection{实验难点（2分）}
   （简述本实验的实现难点，不超过100字。）
+
+\section{实验操作与原始数据（50分）}
+（将有老师签名的“自备数据记录草稿纸”的扫描或手机拍摄图粘贴在下方，应完整保留姓名，学号，教师签字和日期。按老师的要求拍摄实验过程图，附在此处。）
+
+\section{结果与分析（30分）}
+
+  \subsection{数据处理与结果（20分）}  
+  （列出数据表格，选择适合的数据处理方法，运用测量误差、相对误差或不确定度等分析实验结果，写出完整的结果表达式。）
+
+  \subsection{误差分析（10分）}
+  （分析实验的误差原因。）
+
+\section{实验探讨与思考题（10分）}
+（对实验内容、现象和过程的小结，不超过100字。并解答教材或讲义或老师布置的思考题，请先写题干，再作答。）
 
 \vspace*{\fill} % 使下面内容在页面底部显示
 \noindent
@@ -134,7 +156,7 @@
     3. “实验报告”成绩必须在“浙江大学物理实验教学中心网站”-“选课系统”内查询。
 
     4. 教学评价必须在“浙江大学物理实验教学中心网站”-“选课系统”内进行，学生必须进行教学评价，才能看到实验报告成绩，教学评价须在本次实验结束之后3天内进行。\par
-    \endgroup
+  \endgroup
 
   \begin{center}
     {\CJKfontspec[AutoFakeBold=2.5]{SimSun}\bfseries 浙江大学物理实验教学中心制}
