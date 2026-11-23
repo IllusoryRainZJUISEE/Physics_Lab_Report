@@ -113,173 +113,69 @@
 \section{预习报告（10分）}
 
   \subsection{实验综述（5分）}
-  
-    \subsubsection{凸透镜成像原理}
-    两列光波要形成稳定的干涉条纹，需要满足以下相干条件：
-    \begin{enumerate}
-      \item 频率：\( f_1 = f_2 \)
-      \item 振动方向：\( \vec{A}_1 \parallel \vec{A}_2 \)
-      \item 相位差：\( \phi_1 - \phi_2 = \text{定值} \)
-      \item 光程差远小于相干长度
-    \end{enumerate}
 
-    满足这些条件后，可以根据相位差或光程差判断干涉结果：
+    \subsubsection{光的干涉条件}
+    两束光频率相同、振动方向一致、相位差恒定，且光程差在相干长度内时，可形成稳定干涉条纹。光程差满足
     \[
-    \begin{aligned}
-        \text{干涉加强：}\quad
-        & \phi_1 - \phi_2 = 2k\pi, \\
-        & \delta = k\lambda,
-          \quad k = 0, \pm 1, \pm 2, \ldots \\[1em]
-        \text{干涉相消：}\quad
-        & \phi_1 - \phi_2 = \pi + 2k\pi, \\
-        & \delta = \frac{(2k+1)\lambda}{2},
-          \quad k = 0, \pm 1, \pm 2, \ldots
-    \end{aligned}
+    \delta=k\lambda\quad\text{时干涉加强},\qquad
+    \delta=\left(k+\frac{1}{2}\right)\lambda\quad\text{时干涉相消},
+    \qquad k\in\mathbb{Z}
     \]
 
-    \begin{figure}[H]
-      \centering
-      \begin{minipage}{0.3\textwidth}
-        \centering
-        \includegraphics[width=\linewidth]{figures/图1.png}
-        \caption{干涉加强}
-      \end{minipage}
-      \hfill
-      \begin{minipage}{0.3\textwidth}
-        \centering
-        \includegraphics[width=\linewidth]{figures/图2.png}
-        \caption{干涉相消}
-      \end{minipage}
-    \end{figure}
-
     \subsubsection{获取相干光的两种途径}
-    为获得相干光，可以将同一光源发出的光分成两束，再使两束光重新相遇。
-    \begin{itemize}
-      \item 分波面法：点光源的波阵面分割为两部分，这两部分分别通过两个光具组，经反射、折射或衍射后交迭起来，在一定区域形成干涉。
-      \item 分振幅法：当一束光投射到两种透明媒质的分界面上，光一部分反射，另一部分折射，若将它们再次汇聚后就会形成干涉。
-    \end{itemize}
+    将同一光源的光分成两束后重新叠加：分波面法分割同一波阵面；分振幅法利用反射与透射分光，迈克尔逊干涉仪采用后者。
 
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.45\textwidth]{figures/图3.png}
+      \includegraphics[width=0.4\textwidth]{figures/图1.png}
       \caption{获取相干光的两种途径}
     \end{figure}
 
-    \subsubsection{迈克尔逊干涉仪光路图}
-
-    迈克尔逊干涉仪利用分振幅法分出两束光，并使它们沿不同光路返回后汇合。
-    \begin{itemize}
-      \item 分光镜P1——利用分振幅法获得相干光。
-      \item 补偿板P2——补偿分光镜因色散而产生的附加光程差；补偿相同入射角不同入射面光线所产生的附加光程差。
-      \item 干涉现象——通过改变两光束夹角与光程差（移动镜距离，路径中折射率），探究多种干涉条纹。
-    \end{itemize}
+    \subsubsection{迈克尔逊干涉仪光路}
+    分光镜P1将入射光分成两束，经两反射镜返回后汇合干涉；补偿板P2使两束光在玻璃中通过的光程相同。调节反射镜的倾角和位置，可改变条纹形状与光程差。
 
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.5\textwidth]{figures/图4.png}
+      \includegraphics[width=0.4\textwidth]{figures/图2.png}
       \caption{迈克尔逊干涉仪光路图}
     \end{figure}
 
-    \subsubsection{迈克尔逊定域等倾干涉}
-    对于沿不同方向出射的光线，可以由光程差确定相应的干涉条件。
-    两列相干光波的光程差为：
+    \subsubsection{定域等倾干涉}
+    两等效反射面平行、间距为$d$时，倾角为$\theta$的光线光程差为
     \[
-    \begin{aligned}
-    \delta &= (AC + BC) - AD \\
-          &= \frac{2d}{\cos\theta} - 2d\tan\theta\sin\theta \\
-          &= 2d\cos\theta
-    \end{aligned}
+    \delta=2d\cos\theta,\qquad
+    2d\cos\theta_k=k\lambda\quad\text{（亮纹）}
     \]
-
-    对于第\(k\)级亮条纹，有：
-    \[
-    2d\cos\theta_k = k\lambda,
-    \qquad k = 0, \pm 1, \pm 2, \pm 3, \ldots
-    \]
-
-    \begin{figure}[H]
-      \centering
-      \includegraphics[width=0.4\textwidth]{figures/图5.png}
-      \caption{迈克尔逊定域等倾干涉}
-    \end{figure}
+    
+    相同倾角对应同一条纹，形成定域于无穷远的同心圆环。
 
     \subsubsection{钠光波长的测定}
-    在圆环中心，利用光程差与干涉级次的关系，可把环纹变化转化为波长测量。
-    中心处光程差公式：
+    单向移动动镜$\Delta d$，中心吞吐$N$个圆环时，光程差改变$2\Delta d=N\lambda$，故
     \[
-    2d = k\lambda,
-    \qquad k = 0, \pm 1, \pm 2, \pm 3, \ldots
-    \]
-
-    中心吞吐\(N\)个环纹，光程差改变为：
-    \[
-    \Delta L = 2\Delta d = \Delta k\lambda = N\lambda
-    \]
-
-    波长测量公式：
-    \[
-    \boxed{\lambda = \frac{2\Delta d}{N}}
+    \boxed{\lambda=\frac{2\Delta d}{N}}
     \]
 
     \subsubsection{钠黄双线波长差的测定}
-    两条波长接近的谱线形成的干涉条纹叠加后，条纹可见度随光程差变化。
-    钠黄双线：
+    钠黄双线波长约为$589.0\,\mathrm{nm}$和$589.6\,\mathrm{nm}$，两组条纹叠加使可见度周期性变化。相邻两次可见度最小时，动镜位移$\Delta d$满足
     \[
-    \lambda_1 = 589.0\,\mathrm{nm},
-    \qquad
-    \lambda_2 = 589.6\,\mathrm{nm}
-    \]
-
-    条纹可见度最小：
-    \[
-    \Delta = k_2\lambda_2
-    = \left(k_1+\frac{1}{2}\right)\lambda_1,
-    \qquad
-    k_1,\;k_2\text{ 为正整数}
-    \]
-
-    条纹可见度再次最小：
-    \[
-    \Delta+\Delta L
-    = (k_2+k)\lambda_2
-    = \left(k_1+k+1+\frac{1}{2}\right)\lambda_1
-    \]
-
-    \[
-    \Delta L=\frac{\bar{\lambda}^{\,2}}{\Delta\lambda}
-    \]
-
-    双线波长差测量公式：
-    \[
-    \boxed{
-    \Delta\lambda
-    =\frac{\bar{\lambda}^{\,2}}{\Delta L}
-    =\frac{\bar{\lambda}^{\,2}}{2\Delta d}
-    }
+    \boxed{\Delta\lambda\approx\frac{\bar{\lambda}^{\,2}}{2\Delta d}},
+    \qquad \bar{\lambda}=\frac{\lambda_1+\lambda_2}{2}
     \]
 
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.4\textwidth]{figures/图6.png}
+      \includegraphics[width=0.4\textwidth]{figures/图3.png}
       \caption{钠黄双线波长差的测定}
     \end{figure}
 
+    \begin{samepage}
     \subsubsection{实验内容}
-    实验包括两项内容：测量钠光波长与钠黄双线波长差的测定。
-    两项测量均需先调出清晰的圆环条纹，再根据条纹变化记录动镜位置。
-    \begin{itemize}
-      \item 测量钠光波长：等倾干涉条纹调出后，将CCD移到眼睛位置代替人眼，顺时针（或逆时针）转动微调手轮，
-      观察干涉圆环形纹的“涌出”或“陷入”现象。待干涉圆环形纹的“涌出”或“陷入”现象正常后，
-      继续同方向转动微调手轮观察并记录每“涌出”或“陷入”50个干涉圆环形条纹时， 动镜前后移动位置，计算钠光波长。
-
-      \item 钠黄双线波长差的测定:
-      \begin{enumerate}
-        \item 转动粗调手轮，使条纹清晰可见（高对比度）。
-        \item 在干涉圆环形条纹能正常“涌出”（或“陷入”）的前提下，记录$M_2$镜的初始位置，然后继续单向转动微调手轮，
-        每当条纹对比度达到最低（几乎消失） 时，记录$M_2$镜位置的读数，连续测量3次以上。
-        \item 依据测量得到的数据，根据公式，计算钠双线波长差。
-      \end{enumerate}
-    \end{itemize} 
+    调出清晰、稳定的等倾圆环条纹，用CCD观察，并保持动镜单向移动。
+    \begin{enumerate}
+      \item 测量钠光波长：每吞吐50个圆环记录一次动镜位置，由位移与环数计算波长。
+      \item 测量双线波长差：连续记录至少3次条纹可见度最小时的动镜位置，由相邻位置之差计算双线波长差。
+    \end{enumerate}
+    \end{samepage}
 
   \subsection{实验重点（3分）}
   \begin{enumerate}
